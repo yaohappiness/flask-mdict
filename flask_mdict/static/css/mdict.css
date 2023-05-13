@@ -1,4 +1,14 @@
 
+/* 隐藏词典列表里，词典信息的问号 */
+.fas.fa-info-circle {
+    display: none;
+}
+
+/* 隐藏词典图标 */
+img.rounded.align-text-bottom {
+    display: none;
+}
+
 .anchor-fix {
     height: 1em;
 }
@@ -9,7 +19,10 @@
 .mdict-list {
     overflow-x: hidden;
     overflow-y: auto;
-    height: 20em;
+    /* 词典列表的高度设置为自动，不会显示滚动条
+     * 用于配合 Surfingkeys，防止滚动焦点停留在词典列表里
+     */
+    height: auto;
     outline: 1px solid rgba(0,0,0,.125);
     margin-bottom: 5px;
     font-size: 10pt;
